@@ -5,7 +5,8 @@
  * as Electron's renderer process modules and some polyfilled Node.js functions.
  *
  */
-// ━━ IMPORT PACKAGES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+// ━━ IMPORT MODULES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // » IMPORT ELECTRON APIS
 const { contextBridge, ipcRenderer } = require('electron');
 

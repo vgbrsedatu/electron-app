@@ -2,7 +2,8 @@
  * @author Victor Giovanni Beltrán Rodríguez
  * @file Manages the configuration main proccess app.
  */
-// ━━ IMPORT PACKAGES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+// ━━ IMPORT MODULES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // » IMPORT NATIVE NODE MODULES
 const path = require('path');
 const os = require('os');
