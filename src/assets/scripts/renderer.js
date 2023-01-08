@@ -40,12 +40,14 @@ const handlerLoaded = () => {
     replaceText(`${type}-version`, window.appRuntime.versions[type]);
   });
 
-  appAutor.innerHTML = `${window.appRuntime.app.autor}`;
-  appVersion.innerHTML = `${window.appRuntime.app.version}`;
-  appCompany.innerHTML = `${window.appRuntime.app.company}`;
-  appName.innerHTML = window.appRuntime.app.name;
-  appDescription.innerHTML = window.appRuntime.app.description;
-  appCopyright.innerHTML = window.appRuntime.app.copyright;
+  const { about } = window.appRuntime;
+
+  appAutor.innerHTML = `${about.autor}`;
+  appVersion.innerHTML = `${about.version}`;
+  appCompany.innerHTML = `${about.company}`;
+  appName.innerHTML = about.name;
+  appDescription.innerHTML = about.description;
+  appCopyright.innerHTML = about.copyright;
 };
 
 const handlerMinimize = () => {

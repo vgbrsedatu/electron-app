@@ -11,7 +11,7 @@
 const { contextBridge, ipcRenderer } = require('electron');
 
 // ━━ CONSTANTS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-const app = {
+const about = {
   name: 'Electron app',
   description: 'Starter template for electron project',
   team: 'BRSoft Electron',
@@ -31,7 +31,7 @@ const versions = {
 // » CREATE CONTEXT BRIDGE
 contextBridge.exposeInMainWorld('appRuntime', {
   versions,
-  app,
+  about,
   send: (channel, payload) => ipcRenderer.send(channel, payload),
   invoke: (channel, payload) => ipcRenderer.invoke(channel, payload),
 });
