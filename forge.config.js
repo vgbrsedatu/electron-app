@@ -2,6 +2,7 @@
  * @author Victor Giovanni Beltrán Rodríguez
  * @file Manage all configuration settings for the `electron-forge` module.
  */
+
 // ━━ IMPORT MODULES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // » IMPORT MODULES
 const configurations = require('./configurations/forge');
