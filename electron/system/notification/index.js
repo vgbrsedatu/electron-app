@@ -20,7 +20,7 @@ const levels = {
   2: 'critical',
 };
 
-// ━━ MAIN MODULES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ━━ MODULE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 /**
  * The `notification()` function that show a native notification on macOS, Windows
  * and Linux.

@@ -180,7 +180,7 @@ const { dialog } = require('electron');
  * @property {boolean}            [securityScopedBookmarks] - Create a security scoped bookmark when packaged for the Mac App Store, only for `macOS`.
  */
 
-// ━━ MAIN MODULES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ━━ MODULE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 /**
  * The `message()` function Shows a message box, it will block the process
  * until the message box is closed. It returns the index of the clicked button.
