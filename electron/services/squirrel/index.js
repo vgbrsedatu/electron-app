@@ -2,6 +2,10 @@
  * @author Victor Giovanni Beltrán Rodríguez
  * @file Manages the squirrel service for electron app.
  */
+// ━━ IMPORT MODULES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// » IMPORT NATIVE NODE MODULES
+const path = require('path');
+const fs = require('fs');
 
 // ━━ TYPE DEFINITIONS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 /**
@@ -12,6 +16,14 @@
  */
 
 // ━━	MODULE	━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+/**
+ * The `onSquirrel` constant, detects if the application is installed by
+ * `Squirrel-installed`, at runtime.
+ *
+ * @constant {boolean} onSquirrel
+ */
+const onSquirrel = fs.existsSync(path.resolve(path.dirname(process.execPath), '..', 'update.exe'));
+
 /**
  * The `startup()` function it is a handler for default Squirrel.Windows
  * event handler for your Electron apps.
@@ -62,4 +74,5 @@ const startup = app => {
 };
 
 // ━━ EXPORT MODULE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+exports.onSquirrel = onSquirrel;
 exports.startup = startup;
