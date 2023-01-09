@@ -3,7 +3,7 @@
  * @file Main file to export all electron system to main proccess.
  */
 
-// ━━ EXPORT PACKAGES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ━━ EXPORT MODULE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 exports.dialog = require('./dialog');
 exports.file = require('./file');
 exports.menu = require('./menu');
