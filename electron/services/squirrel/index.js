@@ -2,6 +2,7 @@
  * @author Victor Giovanni Beltrán Rodríguez
  * @file Manages the squirrel service for electron app.
  */
+
 // ━━ IMPORT MODULES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // » IMPORT NATIVE NODE MODULES
 const path = require('path');
