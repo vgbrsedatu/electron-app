@@ -18,7 +18,8 @@ let appIcon = null;
 
 // ━━	MODULE	━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 /**
- * The `tray()` function that show a native notification on macOS, Windows and Linux.
+ * The `tray()` function that show a native notification on macOS, Windows and
+ * Linux.
  *
  * @private
  * @param   {object} options - Adds name, icon and menu to tray.
